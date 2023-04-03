@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@nrwl/next": "^15.9.2",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "15.9.2",
     "nx": "15.9.2"
