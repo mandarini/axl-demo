@@ -1,8 +1,9 @@
 import { ethers } from 'ethers';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import {
   IERC20__factory as IERC20,
   IAxelarGateway__factory as IAxelarGateway,
-} from 'types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
+} from '../../../../../../apps/examples/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
 import {
   srcChain,
   srcConnectedWallet,

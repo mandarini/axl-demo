@@ -1,11 +1,12 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import {
   AxelarQueryAPI,
   Environment,
   EvmChain,
   GasToken,
 } from '@axelar-network/axelarjs-sdk';
-import { ERC721Demo__factory as ERC721 } from 'types/contracts/factories/contracts/nft-linker/ERC721demo.sol';
-import { NftLinker__factory as NftLinker } from 'types/contracts/factories/contracts/nft-linker/NFTLinker.sol';
+import { ERC721Demo__factory as ERC721 } from '../../../../../../apps/examples/src/types/contracts/factories/contracts/nft-linker/ERC721demo.sol';
+import { NftLinker__factory as NftLinker } from '../../../../../../apps/examples/src/types/contracts/factories/contracts/nft-linker/NFTLinker.sol';
 import {
   isTestnet,
   wallet,

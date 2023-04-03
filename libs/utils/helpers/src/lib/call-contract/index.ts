@@ -1,3 +1,4 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import {
   srcChain,
   destChain,
@@ -7,7 +8,7 @@ import {
 import {
   MessageSender__factory as MessageSenderFactory,
   MessageReceiver__factory as MessageReceiverFactory,
-} from 'types/contracts/factories/contracts/call-contract';
+} from '../../../../../../apps/examples/src/types/contracts/factories/contracts/call-contract';
 
 const sourceContract = MessageSenderFactory.connect(
   srcChain?.callContract,

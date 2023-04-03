@@ -1,9 +1,10 @@
 import { ethers } from 'ethers';
 import { AxelarAssetTransfer, Environment } from '@axelar-network/axelarjs-sdk';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import {
   IERC20__factory as IERC20,
   IAxelarGateway__factory as IAxelarGateway,
-} from 'types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
+} from '../../../../../../apps/examples/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
 import {
   srcChain,
   srcConnectedWallet,
@@ -34,7 +35,7 @@ export async function depositAddressSendToken(
 ) {
   let depositAddress: string;
 
-  if (process.env.NEXT_PUBLIC_ENVIRONMENT === 'testnet') {
+  if (process.env['NEXT_PUBLIC_ENVIRONMENT'] === 'testnet') {
     const api = new AxelarAssetTransfer({ environment: Environment.TESTNET });
     depositAddress = await api.getDepositAddress(
       srcChain.name,
