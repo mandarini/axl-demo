@@ -1,4 +1,2790 @@
 {
   "_format": "hh-sol-cache-2",
-  "files": {}
+  "files": {
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/aptos/call-contract/contracts/HelloWorld.sol": {
+      "lastModificationDate": 1680542083832,
+      "contentHash": "f2b3d3d7c0487c01155914991f9d8d95",
+      "sourceName": "examples/aptos/call-contract/contracts/HelloWorld.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGasService.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.9 <0.9.0"
+      ],
+      "artifacts": [
+        "HelloWorld"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol": {
+      "lastModificationDate": 1680536292119,
+      "contentHash": "01c9e79b4847815cc5f0759e7e71d82a",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IAxelarGateway.sol",
+        "../interfaces/IAxelarExecutable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AxelarExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGasService.sol": {
+      "lastModificationDate": 1680536292166,
+      "contentHash": "d053be4bdcab708ad14e617a742b7cbe",
+      "sourceName": "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGasService.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IUpgradable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IAxelarGasService"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGateway.sol": {
+      "lastModificationDate": 1680536292166,
+      "contentHash": "a52fa214c10763f16a246401f7dd77ef",
+      "sourceName": "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGateway.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IAxelarGateway"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol": {
+      "lastModificationDate": 1680536292144,
+      "contentHash": "c493ed470617f40baa752fe772d3490e",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAxelarGateway"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarExecutable.sol": {
+      "lastModificationDate": 1680536292144,
+      "contentHash": "2bf91caadece73810d1e7bc537174f04",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAxelarGateway.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAxelarExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-cgp-solidity/contracts/interfaces/IUpgradable.sol": {
+      "lastModificationDate": 1680536292166,
+      "contentHash": "2eeed9864f7249e4229459c97d410602",
+      "sourceName": "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IUpgradable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IUpgradable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/aptos/token-linker/contracts/AptosTokenLinker.sol": {
+      "lastModificationDate": 1680542083836,
+      "contentHash": "15464391269f0d23289b97c89c28c720",
+      "sourceName": "examples/aptos/token-linker/contracts/AptosTokenLinker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IAxelarGasService.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "AptosTokenLinker"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1680536292145,
+      "contentHash": "a0e1a9afa9d0b1cffeaf1d16c8a15287",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol": {
+      "lastModificationDate": 1680536292152,
+      "contentHash": "4473f746a747b313ef67251e2a8ad786",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AddressToString",
+        "StringToAddress"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IExpressExecutable.sol": {
+      "lastModificationDate": 1680536292145,
+      "contentHash": "5d6491e5885c74586e72801ca17c7fb3",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IExpressExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAxelarExecutable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IExpressExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/express/ExpressExecutable.sol": {
+      "lastModificationDate": 1680536292119,
+      "contentHash": "cf24c7ebd9b5cddbeec97f24fb69eedc",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/express/ExpressExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IAxelarGateway.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IExpressExecutable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ExpressExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nft-linker/NftLinker.sol": {
+      "lastModificationDate": 1680542083859,
+      "contentHash": "73280469196b05c22861b7c13478dddb",
+      "sourceName": "examples/evm/nft-linker/NftLinker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/Upgradable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "NftLinker"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1680536292214,
+      "contentHash": "f7f4f78c31f28534852e5c56000a25af",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol": {
+      "lastModificationDate": 1680536292145,
+      "contentHash": "7b062b52a949eb4ebb3a450471e4a05e",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAxelarGasService"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/Upgradable.sol": {
+      "lastModificationDate": 1680536292152,
+      "contentHash": "b16dd03db4376b99b49b11cf4d67b591",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/Upgradable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IUpgradable.sol",
+        "../utils/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Upgradable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1680536290356,
+      "contentHash": "396031251978f8febfd90cb62cb240ec",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1680536292214,
+      "contentHash": "eb7e61db29f31d88b3c1cef1b063d338",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1680536290355,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1680536290355,
+      "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1680536292215,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1680536292214,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1680536293169,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1680536292216,
+      "contentHash": "b9c58920ce74d6dc819161786112e7ee",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1680536292215,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/Ownable.sol": {
+      "lastModificationDate": 1680536292153,
+      "contentHash": "d3fbcddf7f665e994a439e4bf7c33398",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IUpgradable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IUpgradable.sol": {
+      "lastModificationDate": 1680536292151,
+      "contentHash": "3295d1e9c89b145fd8f06d24fd3a1ca0",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IUpgradable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IOwnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IUpgradable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IOwnable.sol": {
+      "lastModificationDate": 1680536292151,
+      "contentHash": "d39c81a287c3a6e03ef09e7ef8ba308f",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IOwnable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/send-ack/SendAckSender.sol": {
+      "lastModificationDate": 1680542083865,
+      "contentHash": "b2cea55c0cbde09f3aac6e0afd600877",
+      "sourceName": "examples/evm/send-ack/SendAckSender.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "SendAckSender"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/send-ack/SendAckReceiverImplementation.sol": {
+      "lastModificationDate": 1680542083865,
+      "contentHash": "0ecb8f8d60438718a9f8192f5fdafdae",
+      "sourceName": "examples/evm/send-ack/SendAckReceiverImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SendAckReceiver.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "SendAckReceiverImplementation"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/send-ack/SendAckReceiver.sol": {
+      "lastModificationDate": 1680542083864,
+      "contentHash": "608d1b447c82b835f619bf14a2047d1f",
+      "sourceName": "examples/evm/send-ack/SendAckReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "SendAckReceiver"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nonced-execution/NoncedExecutable.sol": {
+      "lastModificationDate": 1680542083862,
+      "contentHash": "ba0d43f35a3bce2f0b3a47cfde54f2f2",
+      "sourceName": "examples/evm/nonced-execution/NoncedExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/Upgradable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "NoncedExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nft-auctionhouse/NftAuctionhouseRemote.sol": {
+      "lastModificationDate": 1680542083855,
+      "contentHash": "34385a41fb142cb8920ed347830643ad",
+      "sourceName": "examples/evm/nft-auctionhouse/NftAuctionhouseRemote.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "./NftAuctionhouse.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "NftAuctionhouseRemote"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nft-auctionhouse/NftAuctionhouse.sol": {
+      "lastModificationDate": 1680542083854,
+      "contentHash": "d43e59ba01b46d12fa1e03a8a2910c9e",
+      "sourceName": "examples/evm/nft-auctionhouse/NftAuctionhouse.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "NftAuctionhouse"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1680536292213,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/cross-chain-lending/LendingSatellite.sol": {
+      "lastModificationDate": 1680542083847,
+      "contentHash": "a9b2861827c042e643c500a5da074734",
+      "sourceName": "examples/evm/cross-chain-lending/LendingSatellite.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "LendingSatellite"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nft-linker/ERC721Demo.sol": {
+      "lastModificationDate": 1680542083859,
+      "contentHash": "e46c409849f72afffd54fc34d8273337",
+      "sourceName": "examples/evm/nft-linker/ERC721Demo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ERC721Demo"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nft-auctionhouse/ERC721Demo.sol": {
+      "lastModificationDate": 1680542083854,
+      "contentHash": "e46c409849f72afffd54fc34d8273337",
+      "sourceName": "examples/evm/nft-auctionhouse/ERC721Demo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ERC721Demo"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/cross-chain-token/ERC20CrossChain.sol": {
+      "lastModificationDate": 1680542083850,
+      "contentHash": "7002542e6189297ac09e40209cdeba74",
+      "sourceName": "examples/evm/cross-chain-token/ERC20CrossChain.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "./IERC20CrossChain.sol",
+        "@axelar-network/axelar-cgp-solidity/contracts/ERC20.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/Upgradable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/utils/AddressString.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ERC20CrossChain"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/cross-chain-token/IERC20CrossChain.sol": {
+      "lastModificationDate": 1680542083851,
+      "contentHash": "b4e69c0d802152f03b7514f344e87ece",
+      "sourceName": "examples/evm/cross-chain-token/IERC20CrossChain.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "IERC20CrossChain"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-cgp-solidity/contracts/ERC20.sol": {
+      "lastModificationDate": 1680536290310,
+      "contentHash": "e89ceea0f645effad18959989dd8f180",
+      "sourceName": "@axelar-network/axelar-cgp-solidity/contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-cgp-solidity/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1680536292166,
+      "contentHash": "44eae9aec640d032d51e188229f61fed",
+      "sourceName": "@axelar-network/axelar-cgp-solidity/contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/BaseProxy.sol": {
+      "lastModificationDate": 1680536292152,
+      "contentHash": "1617d0639bc778b70d18a1de8eb66afa",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/BaseProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IProxy.sol",
+        "../interfaces/IUpgradable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseProxy"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IProxy.sol": {
+      "lastModificationDate": 1680536292151,
+      "contentHash": "f6bd8c7bd561e6a59e8299df50e9da63",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IProxy"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IInitProxy.sol": {
+      "lastModificationDate": 1680536292151,
+      "contentHash": "e4f026b44ff040c1f23c9642df809260",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IInitProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IInitProxy"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/node_modules/@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/InitProxy.sol": {
+      "lastModificationDate": 1680536292152,
+      "contentHash": "9a812c242bdfb9b208bf7775fe7a9b69",
+      "sourceName": "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/InitProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IInitProxy.sol",
+        "../interfaces/IUpgradable.sol",
+        "./BaseProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InitProxy"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/Proxy.sol": {
+      "lastModificationDate": 1680542083839,
+      "contentHash": "05c8ce3b9988a55c2aebde818e7baf5d",
+      "sourceName": "examples/evm/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/InitProxy.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ExampleProxy"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/call-contract-with-token-express/DistributionExpressExecutable.sol": {
+      "lastModificationDate": 1680542083845,
+      "contentHash": "0e573f4e77c23ee09bf20466f9046039",
+      "sourceName": "examples/evm/call-contract-with-token-express/DistributionExpressExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/express/ExpressExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/upgradable/Upgradable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "DistributionExpressExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/call-contract-with-token/DistributionExecutable.sol": {
+      "lastModificationDate": 1680542083843,
+      "contentHash": "b3f69f570fbafc1520a2537b63c973a6",
+      "sourceName": "examples/evm/call-contract-with-token/DistributionExecutable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "DistributionExecutable"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/call-contract/ExecutableSample.sol": {
+      "lastModificationDate": 1680542083841,
+      "contentHash": "820c06b0f5270dfca77f6bb4d5896199",
+      "sourceName": "examples/evm/call-contract/ExecutableSample.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGateway.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IAxelarGasService.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ExecutableSample"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/nonced-execution/ExecutableImplementation.sol": {
+      "lastModificationDate": 1680542083861,
+      "contentHash": "4dd89d1d4261a2d2f94e2fdb1341a568",
+      "sourceName": "examples/evm/nonced-execution/ExecutableImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NoncedExecutable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "ExecutableImplementation"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/cross-chain-lending/CompoundInterface.sol": {
+      "lastModificationDate": 1680542083847,
+      "contentHash": "c12fd44a9011b96e71b16e720fc17ea7",
+      "sourceName": "examples/evm/cross-chain-lending/CompoundInterface.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/executable/AxelarExecutable.sol",
+        "@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces/IERC20.sol",
+        "./interfaces/CErc20Interface.sol",
+        "./interfaces/Comptroller.sol"
+      ],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "CompoundInterface"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/cross-chain-lending/interfaces/CErc20Interface.sol": {
+      "lastModificationDate": 1680542083849,
+      "contentHash": "f89bf0ac5a7a1cbcfa703bbc9b40e9eb",
+      "sourceName": "examples/evm/cross-chain-lending/interfaces/CErc20Interface.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "CErc20Interface"
+      ]
+    },
+    "/Users/katerina/Projects/AXELAR/axl-demo/examples/evm/cross-chain-lending/interfaces/Comptroller.sol": {
+      "lastModificationDate": 1680542083850,
+      "contentHash": "c8c78287dfff0d3d4ee5dc602ad0d518",
+      "sourceName": "examples/evm/cross-chain-lending/interfaces/Comptroller.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "evmVersion": "london",
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "peephole": true,
+              "inliner": true,
+              "jumpdestRemover": true,
+              "orderLiterals": true,
+              "deduplicate": true,
+              "cse": true,
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true
+              }
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.9"
+      ],
+      "artifacts": [
+        "Comptroller"
+      ]
+    }
+  }
 }

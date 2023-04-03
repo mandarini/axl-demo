@@ -1,8 +1,9 @@
-import 'dotenv/config';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config();
 import fs from 'fs/promises';
 import path from 'path';
 import { Wallet } from 'ethers';
-import chains from '../../../../../chain-config/local.json';
+import chains from '../../../chain-config/local.json';
 import { deploy as deployCallContract } from './call-contract';
 import { deploy as deployCallContractWithToken } from './call-contract-with-token';
 import { deploy as deployNftLinker } from './nft-linker';
@@ -40,8 +41,11 @@ async function main() {
 
   // update chains
   const updatedChains = [chainA, chainB];
-  const _path = path.resolve(__dirname, '../../../../../chain-config/local.json');
-  const publicPath = path.resolve(__dirname, '../../../../../apps/examples/public/chains.json');
+  const _path = path.resolve(__dirname, '../../../chain-config/local.json');
+  const publicPath = path.resolve(
+    __dirname,
+    '../../../apps/examples/public/chains.json'
+  );
   await fs.writeFile(_path, JSON.stringify(updatedChains, null, 2));
   await fs.writeFile(publicPath, JSON.stringify(updatedChains, null, 2));
 }

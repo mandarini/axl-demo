@@ -1,7 +1,7 @@
 import { getDefaultProvider, utils, Wallet } from 'ethers';
-import { ExampleProxy__factory as ExampleProxy } from '../../types/contracts/factories/contracts/nft-linker/Proxy.sol';
-import { ERC721Demo__factory as ERC721Demo } from '../../types/contracts/factories/contracts/nft-linker/ERC721demo.sol';
-import { NftLinker__factory as NFTLinker } from '../../types/contracts/factories/contracts/nft-linker/NFTLinker.sol/';
+import { ExampleProxy__factory as ExampleProxy } from '../src/types/contracts/factories/contracts/nft-linker/Proxy.sol'
+import { ERC721Demo__factory as ERC721Demo } from '../src/types/contracts/factories/contracts/nft-linker/ERC721demo.sol'
+import { NftLinker__factory as NFTLinker} from '../src/types/contracts/factories/contracts/nft-linker/NFTLinker.sol/'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { deployUpgradable } = require('@axelar-network/axelar-gmp-sdk-solidity');
 
@@ -14,29 +14,29 @@ export async function deploy(wallet: Wallet, chainA: any, chainB: any) {
   const walletB = wallet.connect(providerB);
 
   const erc721FactoryA = new ERC721Demo(walletA);
-  const erc721A = await erc721FactoryA.deploy('ATestCar', 'CAR');
+  const erc721A = await erc721FactoryA.deploy("ATestCar", "CAR");
   chainA.erc721 = erc721A.address;
 
   const erc721FactoryB = new ERC721Demo(walletB);
-  const erc721B = await erc721FactoryB.deploy('ATestCar', 'CAR');
+  const erc721B = await erc721FactoryB.deploy("ATestCar", "CAR");
   chainB.erc721 = erc721B.address;
 
-  const hash = 'QmPGrjwCuHKLvbvcSXHLWSgsjfUVx2faV2xsN4b9VB9ogL';
+  const hash = "QmPGrjwCuHKLvbvcSXHLWSgsjfUVx2faV2xsN4b9VB9ogL";
   const metadata = `https://ipfs.io/ipfs/${hash}`;
-  await erc721A
-    .mintWithMetadata(nftTokenId, hash, metadata)
+  await erc721A.mintWithMetadata(nftTokenId, hash, metadata)
     .then((tx: any) => tx.wait(1));
 
-  await erc721B.mint(nftTokenId).then((tx: any) => tx.wait(1));
+  await erc721B.mint(nftTokenId)
+    .then((tx: any) => tx.wait(1));
 
   const nftLinkerA = await deployUpgradable(
-    chainA.constAddressDeployer,
-    walletA,
-    NFTLinker,
-    ExampleProxy,
-    [chainA.gateway, chainA.gasService],
-    [],
-    utils.defaultAbiCoder.encode(['string'], [chainA.name])
+      chainA.constAddressDeployer,
+      walletA,
+      NFTLinker,
+      ExampleProxy,
+      [chainA.gateway, chainA.gasService],
+      [],
+      utils.defaultAbiCoder.encode(['string'], [chainA.name]),
   );
   chainA.nftLinker = nftLinkerA.address;
 
@@ -47,9 +47,9 @@ export async function deploy(wallet: Wallet, chainA: any, chainB: any) {
     ExampleProxy,
     [chainB.gateway, chainB.gasService],
     [],
-    utils.defaultAbiCoder.encode(['string'], [chainB.name])
+    utils.defaultAbiCoder.encode(['string'], [chainB.name]),
   );
   chainB.nftLinker = nftLinkerB.address;
 
-  return [chainA, chainB];
+  return [chainA, chainB]
 }

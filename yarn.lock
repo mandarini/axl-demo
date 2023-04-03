@@ -31,7 +31,7 @@
   dependencies:
     "@axelar-network/axelar-gmp-sdk-solidity" "^3.2.0"
 
-"@axelar-network/axelar-gmp-sdk-solidity@^3.2.0", "@axelar-network/axelar-gmp-sdk-solidity@^3.2.1":
+"@axelar-network/axelar-gmp-sdk-solidity@^3.2.0", "@axelar-network/axelar-gmp-sdk-solidity@^3.2.1", "@axelar-network/axelar-gmp-sdk-solidity@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@axelar-network/axelar-gmp-sdk-solidity/-/axelar-gmp-sdk-solidity-3.3.0.tgz#3ac23b1f76c26256618de9c6444a6efb256dd4b0"
   integrity sha512-yKd1gkpDiK5J/3kqLJfntaxmMQwmecmzHJRYmhQEwL347CNsxtK+3fzf/kHUras9O/gyb2Rt7rsI3GsD+9KtmA==
@@ -2758,7 +2758,7 @@
     yargs "^17.6.2"
     yargs-parser "21.1.1"
 
-"@openzeppelin/contracts@^4.5.0":
+"@openzeppelin/contracts@^4.8.1":
   version "4.8.2"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.8.2.tgz#d815ade0027b50beb9bcca67143c6bcc3e3923d6"
   integrity sha512-kEUOgPQszC0fSYWpbh2kT94ltOJwj1qfT2DWo+zVttmGmf97JZ99LspePNaeeaLhCImaHVeBbjaQFZQn7+Zc5g==

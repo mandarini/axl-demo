@@ -5,7 +5,7 @@
   "scripts": {
     "deploy": "run-s contracts:build contracts:generate contracts:deploy",
     "contracts:build": "hardhat compile",
-    "contracts:deploy": "ts-node src/lib/scripts-deploy-contracts.ts",
+    "contracts:deploy": "ts-node ./deploy-contracts.ts",
     "contracts:generate": "typechain --target ethers-v5 --out-dir src/types/contracts artifacts/*[!build-info]/**/*[!dbg].json"
   }
 }
