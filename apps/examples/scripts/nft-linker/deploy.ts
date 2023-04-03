@@ -1,8 +1,7 @@
 import { getDefaultProvider, utils, Wallet } from 'ethers';
-import { ExampleProxy__factory as ExampleProxy } from '../src/types/contracts/factories/contracts/nft-linker/Proxy.sol'
-import { ERC721Demo__factory as ERC721Demo } from '../src/types/contracts/factories/contracts/nft-linker/ERC721demo.sol'
-import { NftLinker__factory as NFTLinker} from '../src/types/contracts/factories/contracts/nft-linker/NFTLinker.sol/'
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+import { ExampleProxy__factory as ExampleProxy } from '../../src/types/contracts/factories/contracts/nft-linker/Proxy.sol'
+import { ERC721Demo__factory as ERC721Demo } from '../../src/types/contracts/factories/contracts/nft-linker/ERC721demo.sol'
+import { NftLinker__factory as NFTLinker} from '../../src/types/contracts/factories/contracts/nft-linker/NFTLinker.sol/'
 const { deployUpgradable } = require('@axelar-network/axelar-gmp-sdk-solidity');
 
 const nftTokenId = 0;

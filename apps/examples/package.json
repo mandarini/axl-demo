@@ -1,0 +1,16 @@
+{
+  "name": "axelar-example-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "run-s contracts:build contracts:generate contracts:deploy",
+    "lint": "next lint",
+    "setup": "ts-node scripts/setup.ts",
+    "contracts:build": "hardhat compile",
+    "contracts:deploy": "ts-node scripts/deploy-contracts.ts",
+    "contracts:generate": "typechain --target ethers-v5 --out-dir src/types/contracts artifacts/*[!build-info]/**/*[!dbg].json"
+  }
+}

@@ -20,10 +20,10 @@
     "rpc": "http://localhost:8500/3",
     "tokenName": "Ether",
     "tokenSymbol": "ETH",
-    "callContract": "0x4B3d2C27706608cB037e9946893d8E5fc54f8f6A",
-    "callContractWithToken": "0xc9d57d67A5B5435f5e40d01DAa16896Aa6e74f9E",
-    "erc721": "0x0D74a865C6b3D03441fE9fF59EE9DE5300207F6B",
-    "nftLinker": "0x54d0ad8466Ca673E3cE53D1487fB8Cee970B496b"
+    "callContract": "0xEbBCf39E4cFe4199C92cDaA609f02263E481B67b",
+    "callContractWithToken": "0x3DaF697B8E1E97A074C1238daC4AcF1b407C741E",
+    "erc721": "0x88a474B44FC301b1501e6A6F094ffF7Beb959B83",
+    "nftLinker": "0xfA17583fE7482FaCaf6ffD6bBa9B8272fcBB0dE6"
   },
   {
     "name": "Avalanche",
@@ -46,9 +46,9 @@
     "rpc": "http://localhost:8500/1",
     "tokenName": "Avax",
     "tokenSymbol": "AVAX",
-    "callContract": "0x4B3d2C27706608cB037e9946893d8E5fc54f8f6A",
-    "callContractWithToken": "0xc9d57d67A5B5435f5e40d01DAa16896Aa6e74f9E",
-    "erc721": "0x0D74a865C6b3D03441fE9fF59EE9DE5300207F6B",
-    "nftLinker": "0xa3D8983a3F9389b78e1e3Ce0b95FAD571e56DfF5"
+    "callContract": "0xEbBCf39E4cFe4199C92cDaA609f02263E481B67b",
+    "callContractWithToken": "0x3DaF697B8E1E97A074C1238daC4AcF1b407C741E",
+    "erc721": "0x88a474B44FC301b1501e6A6F094ffF7Beb959B83",
+    "nftLinker": "0xd1e9e744d513815ED246D6f52Dbe47836Ae86af0"
   }
 ]

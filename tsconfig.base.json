@@ -15,9 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@axl-demo/scripts/deploy-contracts": [
-        "libs/scripts/deploy-contracts/src/index.ts"
-      ],
       "@axl-demo/types/contracts": ["libs/types/contracts/src/index.ts"],
       "@axl-demo/ui/card": ["libs/ui/card/src/index.ts"],
       "@axl-demo/ui/layout/layout": ["libs/ui/layout/layout/src/index.ts"],
