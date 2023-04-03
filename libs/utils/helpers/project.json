@@ -1,0 +1,26 @@
+{
+  "name": "utils-helpers",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/utils/helpers/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/utils/helpers",
+        "main": "libs/utils/helpers/src/index.ts",
+        "tsConfig": "libs/utils/helpers/tsconfig.lib.json",
+        "assets": ["libs/utils/helpers/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/utils/helpers/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["util"]
+}

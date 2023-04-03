@@ -1,7 +1,12 @@
 import cn from 'classnames';
 import React, { useEffect, useState } from 'react';
-import { isTestnet } from 'config/constants';
-import { sendNftToDest, sendNftBack, ownerOf, truncatedAddress } from 'helpers';
+import { isTestnet } from '@axl-demo/utils/constants';
+import {
+  sendNftToDest,
+  sendNftBack,
+  ownerOf,
+  truncatedAddress,
+} from '@axl-demo/utils/helpers';
 
 export function NftLinker() {
   const [txhash, setTxhash] = useState<string>();

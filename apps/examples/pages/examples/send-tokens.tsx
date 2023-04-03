@@ -1,13 +1,12 @@
 import cn from 'classnames';
-import type { NextPage } from 'next';
 import React, { useCallback, useEffect, useState } from 'react';
-import { wallet, isTestnet } from 'config/constants';
+import { wallet, isTestnet } from '@axl-demo/utils/constants';
 import {
   getBalance,
   truncatedAddress,
   depositAddressSendToken,
   gatewaySendToken,
-} from 'helpers';
+} from '@axl-demo/utils/helpers';
 
 export function SendTokens() {
   const [customRecipientAddress, setCustomRecipientAddress] =

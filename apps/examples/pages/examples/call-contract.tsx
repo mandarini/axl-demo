@@ -4,7 +4,7 @@ import {
   sendMessageToAvalanche,
   getAvalancheMessage,
   getAvalancheSourceChain,
-} from 'helpers';
+} from '@axl-demo/utils/helpers';
 
 export function CallContract() {
   const [msg, setMsg] = useState<string>('');

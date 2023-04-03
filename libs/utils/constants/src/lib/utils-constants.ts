@@ -1,6 +1,6 @@
 import { getDefaultProvider, providers, Wallet } from 'ethers';
 import testnet from '@axelar-network/axelar-cgp-solidity/info/testnet.json';
-import local from '../../../chain-config/local.json';
+import local from '../../../../../chain-config/local.json';
 
 if (typeof window === 'undefined') {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -8,12 +8,12 @@ if (typeof window === 'undefined') {
 }
 
 function getWallet() {
-  const mnemonic = process.env.NEXT_PUBLIC_EVM_MNEMONIC as string;
-  const privateKey = process.env.NEXT_PUBLIC_EVM_PRIVATE_KEY as string;
+  const mnemonic = process.env['NEXT_PUBLIC_EVM_MNEMONIC'] as string;
+  const privateKey = process.env['NEXT_PUBLIC_EVM_PRIVATE_KEY'] as string;
   return privateKey ? new Wallet(privateKey) : Wallet.fromMnemonic(mnemonic);
 }
 
-export const isTestnet = process.env.NEXT_PUBLIC_ENVIRONMENT === 'testnet';
+export const isTestnet = process.env['NEXT_PUBLIC_ENVIRONMENT'] === 'testnet';
 export const wallet = getWallet();
 
 export const chains = isTestnet ? (testnet as any) : (local as any);

@@ -1,18 +1,16 @@
-import cn from "classnames";
-import React, { useCallback, useEffect, useState } from "react";
-import { wallet, isTestnet } from "config/constants";
+import cn from 'classnames';
+import React, { useCallback, useEffect, useState } from 'react';
+import { wallet, isTestnet } from '@axl-demo/utils/constants';
 import {
   sendTokenToDestChain,
   getBalance,
   generateRecipientAddress,
   truncatedAddress,
-} from "helpers";
-
-
+} from '@axl-demo/utils/helpers';
 
 export function CallContractWithToken() {
   const [customRecipientAddress, setCustomRecipientAddress] =
-    useState<string>("");
+    useState<string>('');
   const [recipientAddresses, setRecipientAddresses] = useState<string[]>([]);
   const [balances, setBalances] = useState<string[]>([]);
   const [senderBalance, setSenderBalance] = useState<string>();
@@ -23,14 +21,14 @@ export function CallContractWithToken() {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
-    const amount = formData.get("amount") as string;
+    const amount = formData.get('amount') as string;
     setLoading(true);
     await sendTokenToDestChain(amount, recipientAddresses, setTxhash).finally(
       () => {
         setLoading(false);
         handleRefreshSrcBalances();
         handleRefreshDestBalances();
-      },
+      }
     );
   }
 
@@ -40,7 +38,7 @@ export function CallContractWithToken() {
   }, [recipientAddresses]);
 
   const handleRefreshSrcBalances = useCallback(async () => {
-    console.log(wallet.address)
+    console.log(wallet.address);
     const [_balance] = await getBalance([wallet.address], true);
     setSenderBalance(_balance);
   }, []);
@@ -52,7 +50,7 @@ export function CallContractWithToken() {
 
   const handleOnAddRecepientAddress = () => {
     setRecipientAddresses([...recipientAddresses, customRecipientAddress]);
-    setCustomRecipientAddress("");
+    setCustomRecipientAddress('');
   };
 
   useEffect(() => {
@@ -76,7 +74,7 @@ export function CallContractWithToken() {
               <h2 className="card-title">Ethereum (Token Sender)</h2>
 
               <p>
-                Sender ({truncatedAddress(wallet.address)}) balance:{" "}
+                Sender ({truncatedAddress(wallet.address)}) balance:{' '}
                 {senderBalance}
               </p>
 
@@ -109,11 +107,11 @@ export function CallContractWithToken() {
                         className="w-full input input-bordered"
                       />
                       <button
-                        className={cn("btn btn-primary", {
+                        className={cn('btn btn-primary', {
                           loading,
-                          "opacity-30":
+                          'opacity-30':
                             loading || recipientAddresses.length === 0,
-                          "opacity-100":
+                          'opacity-100':
                             !loading && recipientAddresses.length > 0,
                         })}
                         type="submit"
@@ -159,7 +157,7 @@ export function CallContractWithToken() {
                     <button
                       onClick={handleOnGenerateRecipientAddress}
                       type="button"
-                      className={cn("btn btn-accent mt-2", {
+                      className={cn('btn btn-accent mt-2', {
                         loading,
                       })}
                     >
@@ -201,6 +199,7 @@ export function CallContractWithToken() {
         </div>
       </div>
     </div>
+  );
 }
 
 export default CallContractWithToken;
