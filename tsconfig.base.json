@@ -18,7 +18,8 @@
       "@axl-demo/ui/card": ["libs/ui/card/src/index.ts"],
       "@axl-demo/ui/layout/layout": ["libs/ui/layout/layout/src/index.ts"],
       "@axl-demo/ui/layout/navbar": ["libs/ui/layout/navbar/src/index.ts"],
-      "@axl-demo/ui/theme-toggle": ["libs/ui/theme-toggle/src/index.ts"]
+      "@axl-demo/ui/theme-toggle": ["libs/ui/theme-toggle/src/index.ts"],
+      "@axl-demo/utils/constants": ["libs/utils/constants/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
