@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -12,7 +14,7 @@ export function UiLayoutNavbar() {
         <ul>
           <li>
             <Link href="/">
-              <a className="text-lg">Examples</a>
+              <span className="text-lg">Examples</span>
             </Link>
           </li>
         </ul>

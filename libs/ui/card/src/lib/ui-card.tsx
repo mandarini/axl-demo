@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
 
@@ -16,7 +17,7 @@ export function UiCard(props: UiCardProps) {
         <p className="text-ellipsis">{props.description}</p>
         <div className="card-actions justify-end">
           <Link href={props.url}>
-            <a className="btn btn-primary">View</a>
+            <span className="btn btn-primary">View</span>
           </Link>
         </div>
       </div>
