@@ -44,3 +44,7 @@ Thumbs.db
 # axelar
 chain-config/*.json
 .aptos
+
+libs/scripts/deploy-contracts/cache
+libs/scripts/deploy-contracts/artifacts
+libs/scripts/deploy-contracts/src/types

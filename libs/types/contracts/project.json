@@ -1,0 +1,8 @@
+{
+  "name": "types-contracts",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/types/contracts/src",
+  "projectType": "library",
+  "targets": {},
+  "tags": ["artifact"]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "scripts-deploy-contracts",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/scripts/deploy-contracts/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/scripts/deploy-contracts",
+        "main": "libs/scripts/deploy-contracts/src/index.ts",
+        "tsConfig": "libs/scripts/deploy-contracts/tsconfig.lib.json",
+        "assets": ["libs/scripts/deploy-contracts/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/scripts/deploy-contracts/**/*.ts"]
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": ["{workspaceRoot}/libs/types/contracts"],
+      "options": {
+        "commands": ["npm run deploy"],
+        "parallel": false,
+        "cwd": "libs/scripts/deploy-contracts",
+        "envFile": "apps/examples/.env"
+      }
+    }
+  },
+  "tags": []
+}
