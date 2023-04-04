@@ -48,6 +48,7 @@ artifacts
 apps/examples/cache
 apps/examples/artifacts
 apps/src/types
+libs/utils/helpers/contracts
 
 node_modules
 build

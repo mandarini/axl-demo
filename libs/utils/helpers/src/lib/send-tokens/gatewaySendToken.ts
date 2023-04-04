@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import {
   IERC20__factory as IERC20,
   IAxelarGateway__factory as IAxelarGateway,
-} from '../../../../../../apps/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
+} from '../../../contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
 import {
   srcChain,
   srcConnectedWallet,
@@ -68,6 +68,7 @@ export async function gatewaySendToken(
   onSent({ txHash, transferFee });
 
   // Wait destination contract to execute the transaction.
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     const newBalance = await destERC20.balanceOf(recipientAddress);
     if (!destBalance.eq(newBalance)) break;

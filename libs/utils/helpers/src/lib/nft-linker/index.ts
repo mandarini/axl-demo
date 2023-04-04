@@ -5,8 +5,8 @@ import {
   EvmChain,
   GasToken,
 } from '@axelar-network/axelarjs-sdk';
-import { ERC721Demo__factory as ERC721 } from '../../../../../../apps/src/types/contracts/factories/contracts/nft-linker/ERC721demo.sol';
-import { NftLinker__factory as NftLinker } from '../../../../../../apps/src/types/contracts/factories/contracts/nft-linker/NFTLinker.sol';
+import { ERC721Demo__factory as ERC721 } from '../../../contracts/factories/contracts/nft-linker/ERC721demo.sol';
+import { NftLinker__factory as NftLinker } from '../../../contracts/factories/contracts/nft-linker/NFTLinker.sol';
 import {
   isTestnet,
   wallet,
@@ -16,6 +16,7 @@ import {
   destConnectedWallet,
 } from '@axl-demo/utils/constants';
 import { defaultAbiCoder, keccak256 } from 'ethers/lib/utils';
+import { sleep } from '../sleep';
 
 const tokenId = 0;
 
@@ -44,13 +45,14 @@ export async function sendNftToDest(
       destChain.name,
       wallet.address,
       {
-        value: gasFee,
+        value: gasFee as any,
       }
     )
   ).wait();
 
   onSrcConfirmed(tx.transactionHash);
 
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     const owner = await ownerOf();
 
@@ -82,13 +84,14 @@ export async function sendNftBack(
       srcChain.name,
       wallet.address,
       {
-        value: gasFee,
+        value: gasFee as any,
       }
     )
   ).wait();
 
   onSrcConfirmed(tx.transactionHash);
 
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     const owner = await ownerOf();
 
@@ -141,6 +144,7 @@ export const ownerOf = async (chain = srcChain) => {
         tokenId: newTokenId,
         tokenURI: metadata,
       };
+    // eslint-disable-next-line no-empty
     } catch (e) {}
   }
 

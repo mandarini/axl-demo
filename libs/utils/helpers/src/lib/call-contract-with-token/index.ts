@@ -10,11 +10,11 @@ import {
 import {
   MessageReceiver__factory as MessageReceiverFactory,
   MessageSender__factory as MessageSenderFactory,
-} from '../../../../../../apps/src/types/contracts/factories/contracts/call-contract-with-token/contracts';
+} from '../../../contracts/factories/contracts/call-contract-with-token/contracts';
 import {
   IAxelarGateway__factory as AxelarGatewayFactory,
   IERC20__factory as IERC20Factory,
-} from '../../../../../../apps/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
+} from '../../../contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
 import {
   isTestnet,
   srcChain,
@@ -80,7 +80,7 @@ export async function sendTokenToDestChain(
       'aUSDC',
       ethers.utils.parseUnits(amount, 6),
       {
-        value: BigInt(isTestnet ? gasFee : 3000000),
+        value: BigInt((isTestnet ? gasFee : 3000000) as any),
       }
     )
     .then((tx: any) => tx.wait());

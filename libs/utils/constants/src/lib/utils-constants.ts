@@ -1,6 +1,6 @@
 import { getDefaultProvider, providers, Wallet } from 'ethers';
 import testnet from '@axelar-network/axelar-cgp-solidity/info/testnet.json';
-import local from '../../../../../chain-config/local.json';
+import local from '../../chain-config/local.json';
 
 if (typeof window === 'undefined') {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
