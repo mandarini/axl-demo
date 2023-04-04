@@ -47,7 +47,7 @@ chain-config/*.json
 artifacts
 apps/examples/cache
 apps/examples/artifacts
-apps/examples/src/types
+apps/src/types
 
 node_modules
 build

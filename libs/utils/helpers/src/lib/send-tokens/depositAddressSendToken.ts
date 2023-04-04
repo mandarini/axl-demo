@@ -4,7 +4,7 @@ import { AxelarAssetTransfer, Environment } from '@axelar-network/axelarjs-sdk';
 import {
   IERC20__factory as IERC20,
   IAxelarGateway__factory as IAxelarGateway,
-} from '../../../../../../apps/examples/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
+} from '../../../../../../apps/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
 import {
   srcChain,
   srcConnectedWallet,

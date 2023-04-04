@@ -10,11 +10,11 @@ import {
 import {
   MessageReceiver__factory as MessageReceiverFactory,
   MessageSender__factory as MessageSenderFactory,
-} from '../../../../../../apps/examples/src/types/contracts/factories/contracts/call-contract-with-token/contracts';
+} from '../../../../../../apps/src/types/contracts/factories/contracts/call-contract-with-token/contracts';
 import {
   IAxelarGateway__factory as AxelarGatewayFactory,
   IERC20__factory as IERC20Factory,
-} from '../../../../../../apps/examples/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
+} from '../../../../../../apps/src/types/contracts/factories/@axelar-network/axelar-gmp-sdk-solidity/contracts/interfaces';
 import {
   isTestnet,
   srcChain,

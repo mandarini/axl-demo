@@ -11,6 +11,6 @@
     "setup": "ts-node scripts/setup.ts",
     "contracts:build": "hardhat compile",
     "contracts:deploy": "ts-node scripts/deploy-contracts.ts",
-    "contracts:generate": "typechain --target ethers-v5 --out-dir src/types/contracts artifacts/*[!build-info]/**/*[!dbg].json"
+    "contracts:generate": "typechain --target ethers-v5 --out-dir ../src/types/contracts artifacts/*[!build-info]/**/*[!dbg].json"
   }
 }
